@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     e.preventDefault();
     const name = nameInput.value.trim();
     if (!name) {
-      message.textContent = 'Napíš prosím meno.';
+      message.textContent = 'Prosím napíš meno.';
       return;
     }
     message.textContent = `Ahoj, ${name}! 👋`;
