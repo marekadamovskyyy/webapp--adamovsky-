@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jednoduchá web app — webapp-<priezvisko></title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Ukážková webová aplikácia</h1>
+    <p>Toto je jednoduchý príklad: tlačidlo prepne tému, formulár pozdraví používateľa.</p>
+
+    <button id="theme-toggle" class="btn">Prepnúť na tmavý režim</button>
+
+    <section class="card">
+      <h2>Pozdrav</h2>
+      <form id="greet-form">
+        <input id="name-input" type="text" placeholder="Zadaj meno" aria-label="Meno" required />
+        <button class="btn" type="submit">Pozdraviť</button>
+      </form>
+      <p id="message" class="message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
